@@ -34,6 +34,10 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 | ![State Image 1](https://github.com/user-attachments/assets/196df60b-0cee-4807-b0e4-7a3e309bb654) |
 |:--:|
 | ![State Image 2](https://github.com/user-attachments/assets/23fc8271-b15a-43f6-9f29-6b427f260e3c) |
+
+
+### 🛕 city page
+
 | ![City Page](https://github.com/user-attachments/assets/885223c6-e47e-4fa9-91a8-0a7b46223823) |
 
 ---
