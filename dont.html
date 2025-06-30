@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Don’ts by State – India Travel Etiquette</title>
+  <link rel="stylesheet" href="dont.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="https://img.icons8.com/ios/50/globe--v1.png" alt="Logo" />
+      <span>Global Culture Traveler</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="do.html">Do’s</a>
+      <a href="dont.html" class="active">Don’ts</a>
+    </nav>
+
+    <div class="theme-toggle" title="Toggle Theme">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider round"></span>
+      </label>
+      <span id="theme-label">Light Mode</span>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <h1>State-wise Cultural Don’ts in India</h1>
+    <p class="intro">
+      Each Indian state has unique customs. Avoid these cultural missteps while exploring:
+    </p>
+
+    <!-- General Don’ts -->
+    <div class="state-section">
+      <h2>🇮🇳 General Don’ts Across India</h2>
+      <ul>
+        <li>Don’t point your feet at people or religious objects.</li>
+        <li>Don’t touch books or people with your feet—it’s considered disrespectful.</li>
+        <li>Don’t display affection (hug/kiss) in public, especially in rural areas.</li>
+        <li>Don’t photograph people without asking permission, especially in sensitive areas.</li>
+        <li>Don’t enter homes, temples, or mosques with shoes on.</li>
+        <li>Don’t criticize religion or caste—it's a sensitive subject in many communities.</li>
+        <li>Don’t hand things to others with your left hand—use your right hand or both hands.</li>
+      </ul>
+    </div>
+
+    <!-- Madhya Pradesh -->
+    <div class="state-section">
+      <h2>🇮🇳 Madhya Pradesh</h2>
+      <ul>
+        <li>Don’t enter tribal villages without permission or guidance.</li>
+        <li>Don’t touch sacred tribal artifacts or totems without asking.</li>
+        <li>Avoid loud conversations or phone calls in religious or forest areas.</li>
+      </ul>
+    </div>
+
+    <!-- Odisha -->
+    <div class="state-section">
+      <h2>🇮🇳 Odisha</h2>
+      <ul>
+        <li>Don’t wear revealing clothes at Jagannath Temple or Konark Sun Temple.</li>
+        <li>Don’t consume meat or alcohol near holy sites like Puri.</li>
+        <li>Avoid disrespecting traditional Odissi performances or Pattachitra artists.</li>
+      </ul>
+    </div>
+
+    <!-- Assam -->
+    <div class="state-section">
+      <h2>🇮🇳 Assam</h2>
+      <ul>
+        <li>Don’t disrespect Bihu festivals or treat them as just entertainment.</li>
+        <li>Avoid using plastic near the Kaziranga and other eco-sensitive zones.</li>
+        <li>Don’t mock or misrepresent tribal customs or headgear.</li>
+      </ul>
+    </div>
+
+    <!-- West Bengal -->
+    <div class="state-section">
+      <h2>🇮🇳 West Bengal</h2>
+      <ul>
+        <li>Don’t question religious practices during Durga Puja.</li>
+        <li>Avoid littering or spitting near public ghats or pandals.</li>
+        <li>Don’t disrupt classical performances or folk theatre with noise or phones.</li>
+      </ul>
+    </div>
+
+    <!-- Kerala -->
+    <div class="state-section">
+      <h2>🇮🇳 Kerala</h2>
+      <ul>
+        <li>Don’t enter temples like Sabarimala with improper attire.</li>
+        <li>Don’t mock or interrupt Kathakali, Theyyam or Kalaripayattu sessions.</li>
+        <li>Avoid public intimacy, especially in conservative towns or beaches.</li>
+      </ul>
+    </div>
+
+    <!-- Rajasthan -->
+    <div class="state-section">
+      <h2>🇮🇳 Rajasthan</h2>
+      <ul>
+        <li>Don’t damage or deface heritage sites like forts and havelis.</li>
+        <li>Don’t joke about Rajasthani dialects or rural traditions.</li>
+        <li>Avoid entering temples without covering your head (in rural areas).</li>
+      </ul>
+    </div>
+
+    <p class="back-link"><a href="index.html">← Back to Home</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Global Culture Traveler. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-switch');
+    const themeLabel = document.getElementById('theme-label');
+    const body = document.body;
+
+    function updateThemeLabel() {
+      themeLabel.textContent = body.classList.contains('dark-theme') ? 'Dark Mode' : 'Light Mode';
+    }
+
+    themeToggle.addEventListener('change', () => {
+      body.classList.toggle('dark-theme');
+      localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+      updateThemeLabel();
+    });
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeToggle.checked = true;
+      }
+      updateThemeLabel();
+    };
+  </script>
+
+</body>
+</html>

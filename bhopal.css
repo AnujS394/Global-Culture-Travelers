@@ -1,0 +1,127 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#ddd,#ddd);
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.city-header {
+  background: linear-gradient(140deg,#b58787,#a0eacb);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.city-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.city-header .back-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a0eacb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.city-header .back-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Main Content ===== */
+.city-content {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.city-content h2 {
+  color: #152120;
+  margin-top: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.city-content h3 {
+  color: #010202;
+  margin: 20px 0 10px;
+  font-size: 1.4rem;
+}
+
+.city-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.city-content ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.city-content ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== Event Block ===== */
+.event-block {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== Event Images ===== */
+.event-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .city-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .city-content {
+    padding: 20px;
+  }
+
+  .event-image {
+    max-height: 250px;
+  }
+
+  .city-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .city-content h3 {
+    font-size: 1.2rem;
+  }
+}

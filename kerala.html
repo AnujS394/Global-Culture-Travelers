@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Kerala</title>
+  <link rel="stylesheet" href="mp-style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="https://img.icons8.com/ios/24/airplane-take-off.png" alt="Plane" />
+      <span>Explore Kerala</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="state.html">State</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="intro-section">
+    <h1>Welcome to God's Own Country – Kerala</h1>
+    <p>From serene backwaters to vibrant boat races and traditional art forms like Kathakali, Kerala offers a rich blend of nature and culture.</p>
+  </section>
+
+  <section class="cities-grid">
+
+    <div class="city-card">
+      <img src="Thiruvananthapuram.webp" alt="Thiruvananthapuram">
+      <h2>Thiruvananthapuram</h2>
+      <p>Kerala's capital offers Padmanabhaswamy Temple, Onam celebrations, and cultural museums.</p>
+      <a href="thiruvananthapuram.html">Cultural Event</a>
+    </div>
+
+    <div class="city-card">
+      <img src="kochi.webp" alt="Kochi">
+      <h2>Kochi</h2>
+      <p>A blend of Dutch, Portuguese, and local traditions. Known for Biennale, boat parades, and spice markets.</p>
+      <a href="kochi.html">Cultural Event</a>
+    </div>
+
+    <div class="city-card">
+      <img src="munnar.avif" alt="Munnar">
+      <h2>Munnar</h2>
+      <p>Tea gardens, hill festivals, tribal culture, and eco-tourism define this misty retreat.</p>
+      <a href="munnar.html">Cultural Event</a>
+    </div>
+
+    <div class="city-card">
+      <img src="alappuzha.jpg" alt="Alappuzha">
+      <h2>Alappuzha</h2>
+      <p>Home to Kerala's famed backwaters and the colorful Nehru Trophy Boat Race.</p>
+      <a href="alappuzha.html">Cultural Event</a>
+    </div>
+
+    <div class="city-card">
+      <img src="wayanad.jpg" alt="Wayanad">
+      <h2>Wayanad</h2>
+      <p>A green paradise with tribal art, forest festivals, and rich spice culture.</p>
+      <a href="wayanad.html">Cultural Event</a>
+    </div>
+
+  </section>
+
+  <section class="download-section">
+    <button onclick="downloadPDF()">📄 Download cultural festival (PDF)</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Global Culture Traveler | Kerala Explorer</p>
+  </footer>
+
+  <script>
+    function downloadPDF() {
+      window.location.href = "kerala-festival.pdf";
+    }
+  </script>
+
+</body>
+</html>

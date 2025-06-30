@@ -1,0 +1,85 @@
+/* Reset and base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ecd7d7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.city-header {
+  background: linear-gradient(135deg,#494545,#9c8282);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.city-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.back-link {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+.city-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.city-content h2 {
+  color: #4a148c;
+  margin-bottom: 10px;
+}
+
+/* Event Block */
+.event-block {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.event-block img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .city-content {
+    padding: 0 15px;
+  }
+
+  .event-block img {
+    height: 200px;
+  }
+}

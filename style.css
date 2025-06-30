@@ -1,0 +1,501 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #f2f2f5, #dbaacb);
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f0eaea;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin-bottom: 10px;
+
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  size: 20px;
+}
+
+.logo-container img {
+  width: 38px;
+  height: 38px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 6px 10px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: rgb(149, 82, 31);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 10px;
+  background-color: rgb(149, 82, 31);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 30%;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background-image: url('back.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+
+
+
+/* ===== State Select Section ===== */
+.state-select-section {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 160px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  color:  #ffffff;
+  animation: backgroundSlide 15s steps(1) infinite;
+}
+
+.state-select-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('Ganesh\ Chaturthi\ –\ Pune\ Style.jpg');
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.state-select-section h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.state-select-section select {
+  padding: 14px 24px;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #41c176, #a0ab9e );
+  color: #0e0d0d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* === Background Slide Animation (1 second intervals) === */
+@keyframes backgroundSlide {
+  0%   { background-image: url('diwali.webp'); }
+  14.28%  { background-image: url('Kathputli-the-fading-tradition-of-India-Blog-Filming-Indo-3-1.jpg'); }
+  28.56%  { background-image: url('india.3.jpg'); }
+  42.84%  { background-image: url('india.4.jpg'); }
+  57.12%  { background-image: url('holi.jpg'); }
+  71.4%   { background-image: url('india.1.cms'); }
+  85.68%  { background-image: url('Kathputli-the-fading-tradition-of-India-Blog-Filming-Indo-3-1.jpg'); }
+  100%    { background-image: url('india.3.jpg'); }
+}
+
+
+/* === Combined Cultural Events Section === */
+.unified-cultural-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #a0dac7, #e2d1c3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+ column-gap: 50px;
+ margin-bottom: 40px;
+ border-radius: 10px;
+}
+
+.unified-cultural-section h2 {
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for event cards */
+.unified-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual event card styling */
+.event-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  column-gap: 100%;
+ 
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image styling and alignment */
+.event-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Keeps a consistent ratio */
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #ffa600;
+
+}
+
+/* Event text info */
+.event-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.event-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 992px) {
+  .unified-event-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .unified-event-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+
+  .unified-cultural-section h2 {
+    font-size: 2rem;
+  }
+
+  .event-info {
+    text-align: center;
+  }
+}
+
+
+
+/* ===== Do’s and Don’ts Section ===== */
+.dos-donts-section {
+  background: linear-gradient(135deg, #839cb9, #dfecee);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 16px;
+}
+
+.dos-donts-section .text-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.dos-donts-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.dos-donts-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ede4e4;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+/* Individual Card */
+.card-do-dont {
+ background: linear-gradient(135deg, #6e72db, #8bea76);
+  color: #000000;
+  width: 200px;
+  height: 180px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-do-dont:hover {
+  transform: translateY(-6px);
+}
+
+.card-do-dont p {
+  margin-bottom: 1rem;
+}
+
+/* Icon styling */
+.icon {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Checkmark - green */
+.check {
+  background: #00c292;
+  color: white;
+}
+
+/* Cross - red */
+.cross {
+  background: #ff6b6b;
+  color: rgb(255, 255, 255);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .dos-donts-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card-do-dont {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .dos-donts-section .text-content {
+    text-align: center;
+  }
+}
+
+
+/* ===== Footer Section ===== */
+footer.section-p1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #f2f2f5, #dbaacb);
+  padding: 60px 50px;
+  color: #2c2c2c;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+footer .col {
+  flex: 1 1 250px;
+  margin: 20px;
+  min-width: 200px;
+}
+
+footer .col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  position: relative;
+  color: #000;
+}
+
+footer .col h4::after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: #ff6600;
+  display: block;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+footer .col p,
+footer .col a {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+footer .col a:hover {
+  color: #ff6600;
+  padding-left: 6px;
+}
+
+footer .row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer .row img {
+  width: 120px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+footer .row img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .state-select-section {
+    padding: 30px 20px;
+  }
+
+  .event-cards,
+  .cultural-events-row,
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer.section-p1 {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

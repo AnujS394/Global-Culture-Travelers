@@ -1,0 +1,125 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #7bcbc8;
+  color: #333;
+  line-height: 1.6;
+ 
+}
+
+.main-header {
+  background-color: #88b1d0;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-container img {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #e3f2fd, #fff);
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.city-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.city-card h2 {
+  padding: 1rem 1rem 0;
+  color: #3f51b5;
+}
+
+.city-card p {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.city-card a {
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.city-card a:hover {
+  background-color: #147d87;
+}
+
+footer {
+  text-align: center;
+  background-color: #90c5e1;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

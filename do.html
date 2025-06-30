@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Do’s by State – India Travel Etiquette</title>
+  <link rel="stylesheet" href="do.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="https://img.icons8.com/ios/50/globe--v1.png" alt="Logo" />
+      <span>Global Culture Traveler</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="do.html" class="active">Do’s</a>
+      <a href="dont.html">Don’ts</a>
+    </nav>
+
+    <div class="theme-toggle" title="Toggle Theme">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider round"></span>
+      </label>
+      <span id="theme-label">Light Mode</span>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <h1>State-wise Cultural Do’s in India</h1>
+    <p class="intro">
+      Embrace the richness of each state by respecting and following these cultural practices:
+    </p>
+
+    <div class="state-section">
+      <h2>Why Cultural Do’s Matter</h2>
+      <p>
+        When visiting a new place, it's important to show respect and understanding for the local traditions, beliefs, and customs. Doing so not only enhances your experience but also promotes cross-cultural harmony and appreciation.
+      </p>
+
+      <h2>Essential Cultural Do’s</h2>
+      <ul>
+        <li>Learn a few basic phrases in the local language, like "Hello", "Thank you", and "Excuse me".</li>
+        <li>Dress modestly and appropriately, especially near religious or sacred sites.</li>
+        <li>Always remove your shoes before entering someone’s home or a temple/mosque (where required).</li>
+        <li>Use your right hand when offering or receiving something, particularly in South Asian cultures.</li>
+        <li>Participate respectfully in local festivals and celebrations.</li>
+        <li>Respect the personal space and customs of locals.</li>
+        <li>Be punctual if you're attending traditional or formal events.</li>
+        <li>Ask before taking photos, especially of individuals or religious ceremonies.</li>
+      </ul>
+
+      <h2>Tips for Responsible Tourism</h2>
+      <ul>
+        <li>Support local businesses, artists, and guides.</li>
+        <li>Avoid touching or climbing on heritage structures and sculptures.</li>
+        <li>Learn and follow local environmental practices – reduce plastic usage and waste.</li>
+        <li>Be patient and open-minded when encountering unfamiliar traditions or beliefs.</li>
+      </ul>
+
+      <div class="generated-dos">
+        <h3>Auto-Generated Cultural Do’s</h3>
+        <ul>
+          <li>Respect local dress codes and traditions.</li>
+          <li>Greet elders and locals with a polite gesture.</li>
+          <li>Participate in cultural events with curiosity and humility.</li>
+          <li>Ask permission before photographing people or rituals.</li>
+          <li>Support local artisans and buy handmade crafts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 Madhya Pradesh</h2>
+      <ul>
+        <li>Do greet locals respectfully, especially elders in villages.</li>
+        <li>Do take permission before entering tribal areas or photographing people.</li>
+        <li>Do explore local handicrafts and support tribal markets.</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 Odisha</h2>
+      <ul>
+        <li>Do remove shoes before entering any temple premises.</li>
+        <li>Do attend cultural festivals like Rath Yatra and support traditional art.</li>
+        <li>Do try authentic Odia food with respect for vegetarian customs in religious areas.</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 Assam</h2>
+      <ul>
+        <li>Do say “Namaskar” and learn basic Assamese greetings.</li>
+        <li>Do respect nature and local communities in eco-tourism zones.</li>
+        <li>Do appreciate Bihu dances and support handloom products.</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 West Bengal</h2>
+      <ul>
+        <li>Do attend Durga Puja with respectful attire and behavior.</li>
+        <li>Do learn about Tagore and Bengali cultural icons during your visit.</li>
+        <li>Do enjoy local sweets like rasgulla and sandesh politely if offered.</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 Kerala</h2>
+      <ul>
+        <li>Do wear traditional attire when entering temples (mundu for men, saree/salwar for women).</li>
+        <li>Do take backwater tours and support eco-friendly tourism.</li>
+        <li>Do respect Ayurveda and holistic health customs.</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h2>🇮🇳 Rajasthan</h2>
+      <ul>
+        <li>Do dress modestly when visiting forts or rural areas.</li>
+        <li>Do bargain politely in local bazaars—it’s part of the culture.</li>
+        <li>Do attend folk performances and appreciate Rajasthani music and dance.</li>
+      </ul>
+    </div>
+
+    <p class="back-link"><a href="index.html">← Back to Home</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Global Culture Traveler. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-switch');
+    const themeLabel = document.getElementById('theme-label');
+    const body = document.body;
+
+    function updateThemeLabel() {
+      themeLabel.textContent = body.classList.contains('dark-theme') ? 'Dark Mode' : 'Light Mode';
+    }
+
+    themeToggle.addEventListener('change', () => {
+      body.classList.toggle('dark-theme');
+      localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+      updateThemeLabel();
+    });
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeToggle.checked = true;
+      }
+      updateThemeLabel();
+    };
+  </script>
+
+</body>
+</html>

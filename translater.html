@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Translate | Global Culture Traveler</title>
+  <link rel="stylesheet" href="translate-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-language"></i> Global Culture Translator</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-links" style="text-align: center; padding: 15px; background: #f0f0f0;">
+    <a href="index.html" >Home</a>
+    <a href="state.html">State</a>
+    <a href="blog.html">Blog</a>
+    <a href="translater.html" class="active">
+      <i class="fas fa-language"></i>
+    </a>
+  </nav>
+
+  <main>
+    <div class="translate-box">
+      <h2>Type and Translate Your Text</h2>
+
+      <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+
+      <div>
+        <label for="language">Choose Language:</label>
+        <select id="language">
+          <option value="or">Odia (Odisha)</option>
+          <option value="hi">Hindi (MP, Rajasthan, Maharashtra)</option>
+          <option value="as">Assamese (Assam)</option>
+          <option value="pa">Punjabi (Punjab)</option>
+          <option value="ml">Malayalam (Kerala)</option>
+        </select>
+      </div>
+
+      <button onclick="translateText()">Translate</button>
+
+      <div class="output">
+        <h3>Translated Text:</h3>
+        <iframe id="translateFrame"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Global Culture Traveler</p>
+  </footer>
+
+  <script>
+    function translateText() {
+      const text = document.getElementById("textInput").value;
+      const lang = document.getElementById("language").value;
+      const iframe = document.getElementById("translateFrame");
+
+      const encodedText = encodeURIComponent(text);
+      iframe.src = `https://translate.google.com/?sl=en&tl=${lang}&text=${encodedText}&op=translate`;
+    }
+  </script>
+</body>
+</html>
