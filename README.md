@@ -48,3 +48,27 @@ Global-Culture-Travelers/
 └── /state-pages/ # Individual HTML pages for cities like Bhopal, Jaipur, Pune, etc.
 
 
+
+---
+
+## 🌐 Targeted States & Cities
+
+- **Madhya Pradesh**: Bhopal, Indore, Ujjain, Jabalpur, Gwalior
+- **Maharashtra**: Mumbai, Pune, Nashik, Amravati, Nagpur
+- **Rajasthan**: Jaipur, Jodhpur, Jaisalmer, Bikaner, Udaipur
+
+Each city features:
+- Festivals (e.g., Ganesh Chaturthi, Desert Festival)
+- Traditional foods (e.g., Dal Baati, Misal Pav)
+- Local dos and don’ts (greeting customs, attire, temple behavior)
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AnujS394/Global-Culture-Travelers.git
+
+
+
