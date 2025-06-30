@@ -21,7 +21,16 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 
 | 🏠 Homepage | 🛕 State Culture Page | 📜 Cultural Etiquette |
 |------------|----------------------|------------------------|
-| ![Home](https://user-images.githubusercontent.com/76626529/277208200-0b5de402-72bc-4862-8b98-08874eaa3691.png) | ![State](https://user-images.githubusercontent.com/76626529/277208271-e3e9df3c-79b1-432c-b47a-c0ccf3e78513.png) | ![Etiquette](https://user-images.githubusercontent.com/76626529/277208309-387c7e4f-d130-4c64-b2f3-d9ffb18862ec.png) |
+| ![Home] ![image](https://github.com/user-attachments/assets/22d83330-77e4-4410-b057-dbb8096816a3) ![image](https://github.com/user-attachments/assets/c560cfd1-7d22-4998-bbad-ced6445ab50c)![image](https://github.com/user-attachments/assets/8dc66917-81d3-4113-83d5-581a2e95bb98)![image](https://github.com/user-attachments/assets/894747eb-1d85-48f3-abd1-c70c020282f1) |
+
+
+
+| ![State]![image](https://github.com/user-attachments/assets/196df60b-0cee-4807-b0e4-7a3e309bb654)![image](https://github.com/user-attachments/assets/23fc8271-b15a-43f6-9f29-6b427f260e3c) |
+
+ | ![blog]![image](https://github.com/user-attachments/assets/2f0ff76d-3f2a-44a7-9db2-6350c32d683b)![image](https://github.com/user-attachments/assets/5d024e6c-dfe9-4f89-8ed8-1d307df14dea)![image](https://github.com/user-attachments/assets/58b0a206-6459-4fd5-85c9-9aebbb036c8f)
+
+
+ |
 
 ---
 
@@ -36,6 +45,4 @@ Global-Culture-Travelers/
 ├── /images # Static image assets
 └── /state-pages/ # Individual HTML pages for cities like Bhopal, Jaipur, Pune, etc.
 
-yaml
-Copy
-Edit
+
