@@ -16,6 +16,10 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 - 💻 Fully responsive layout  
 
 ---
+### 🎥 Demo Video
+
+[Click to watch the demo video]("D:\glob\static\background.mp4")
+
 
 ## 🖼️ Output Preview
 
