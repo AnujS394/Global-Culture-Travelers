@@ -1,4 +1,4 @@
-# 🌏 Global Culture Travelers
+# 🌏 Indian Culture Explorer
 
 **A web platform to explore Indian states through culture, festivals, traditions, and travel etiquette.**
 
