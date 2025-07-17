@@ -62,6 +62,7 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 
 Global-Culture-Travelers/
 │
+├── app.py
 ├── index.html # Home page introducing the platform
 ├── state.html # Main cultural hub per Indian state
 ├── blog.html # Informational articles and guides
