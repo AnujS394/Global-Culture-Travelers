@@ -28,8 +28,10 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 | <img width="1881" height="698" alt="image" src="https://github.com/user-attachments/assets/57d0ef53-ba62-4472-b254-a556b834d594" /> |
 |<img width="1880" height="706" alt="image" src="https://github.com/user-attachments/assets/3ac2b4b9-4ae9-45ab-9fc8-d1467943ad64" /> |
  |<img width="1886" height="541" alt="image" src="https://github.com/user-attachments/assets/1d4049c2-2969-4cda-9a14-37281eebb987" />|
- |<img width="1872" height="677" alt="image" src="https://github.com/user-attachments/assets/c141a9c7-0cc0-4550-9296-01c99921c435" />|
-|<img width="1885" height="663" alt="image" src="https://github.com/user-attachments/assets/17d8ab6a-d1e6-4c17-b827-d395b62f4adc" />|
+ |<img width="1882" height="772" alt="image" src="https://github.com/user-attachments/assets/98f8773f-969f-4684-b4d5-b75184898684" />
+|
+|<img width="1880" height="720" alt="image" src="https://github.com/user-attachments/assets/1a1b075d-5b1c-4563-b4a6-88655d0b8828" />
+|
 |<img width="1895" height="477" alt="image" src="https://github.com/user-attachments/assets/31854859-97a1-409e-ac48-8e7f642c6bd2" />|
 
 ---
