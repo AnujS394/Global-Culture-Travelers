@@ -21,7 +21,8 @@ This responsive website helps travelers and culture enthusiasts learn about the 
 
 ### 🏠 Homepage
 
-| ![Home Image 1](https://github.com/user-attachments/assets/22d83330-77e4-4410-b057-dbb8096816a3) |
+| <img width="1890" height="920" alt="image" src="https://github.com/user-attachments/assets/9d3e016e-3a81-47eb-87b7-08ea1792bbf9" />
+ |
 |:--:|
 | ![Home Image 2](https://github.com/user-attachments/assets/c560cfd1-7d22-4998-bbad-ced6445ab50c) |
 | ![Home Image 3](https://github.com/user-attachments/assets/8dc66917-81d3-4113-83d5-581a2e95bb98) |
