@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cultural Amravati</title>
-  <link rel="stylesheet" href="amravati.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='amravati.css') }}" />
 </head>
 <body>
 
   <header class="city-header">
     <h1>Culture & Festivals of Amravati</h1>
-    <a href="maharahtra.html" class="back-link">← Back to Maharashtra</a>
+    <a href="{{ url_for('maharashtra') }}" class="back-link">← Back to Maharashtra</a>
   </header>
 
   <section class="city-content">
@@ -26,7 +26,7 @@
     <h2>🎉 Major Cultural Festivals & Events</h2>
 
     <div class="event-block">
-      <img src="Ambadevi Yatra & Navratri Mahotsav.jpg" alt="Ambadevi Yatra and Navratri Fair">
+      <img src="{{ url_for('static', filename='mahotsav.jpg') }}" alt="Ambadevi Yatra and Navratri Fair">
       <h3>🕯 Ambadevi Yatra & Navratri Mahotsav</h3>
       <p><strong>When:</strong> September–October (Sharadiya Navratri)</p>
       <p><strong>Where:</strong> Ambadevi Temple, Gandhi Chowk</p>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="event-block">
-      <img src="Vidarbha Sanskrutik Mahotsav.jpeg.jpg" alt="Vidarbha Sanskrutik Mahotsav">
+      <img src="{{ url_for('static', filename='Vidarbha Sanskrutik Mahotsav.jpeg.jpg') }}" alt="Vidarbha Sanskrutik Mahotsav">
       <h3>🎭 Vidarbha Sanskrutik Mahotsav</h3>
       <p><strong>When:</strong> January / February</p>
       <p><strong>Where:</strong> University Grounds, Auditoriums</p>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="event-block">
-      <img src="Kranti Din & Gadge Baba Jayanti.webp" alt="Gadge Baba Jayanti and Kranti Din">
+      <img src="{{ url_for('static', filename='Kranti Din & Gadge Baba Jayanti.webp') }}" alt="Gadge Baba Jayanti and Kranti Din">
       <h3>🕊 Kranti Din & Gadge Baba Jayanti</h3>
       <p><strong>When:</strong> August 9 & February</p>
       <p><strong>Where:</strong> Freedom Park, Gadge Baba Memorial</p>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="event-block">
-      <img src="Maha Shivratri at Melghat & Chikhaldara Temples.avif" alt="Melghat Shivratri Celebrations">
+      <img src="{{ url_for('static', filename='Maha Shivratri at Melghat & Chikhaldara Temples.avif') }}" alt="Melghat Shivratri Celebrations">
       <h3>📿 Maha Shivratri at Melghat & Chikhaldara Temples</h3>
       <p><strong>When:</strong> February–March</p>
       <p><strong>Where:</strong> Morshi, Melghat, Chikhaldara</p>
@@ -58,7 +58,7 @@
     </div>
 
     <div class="event-block">
-      <img src="Youth & Tribal Art Festivals   Festivals of Amravati.jpg" alt="Tribal Youth Art Festival">
+      <img src="{{ url_for('static', filename='Youth & Tribal Art Festivals   Festivals of Amravati.jpg') }}" alt="Tribal Youth Art Festival">
       <h3>🎨 Youth & Tribal Art Festivals</h3>
       <p><strong>When:</strong> November–February</p>
       <p><strong>Where:</strong> University, Art Colleges, Kala Bhavan</p>

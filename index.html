@@ -4,144 +4,143 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Global Culture Traveler</title>
-  
+
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- Header -->
   <header class="main-header">
     <div class="logo-container">
       <img src="https://img.icons8.com/ios/24/airplane-take-off.png" alt="Airplane Icon" />
-      <span>Global Culture Traveler</span>
+      <span>Indian Culture Explore</span>
     </div>
     <nav class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="state.html">State</a>
-      <a href="blog.html">Blog</a>
-      <a href="translater.html"><i class="fas fa-language"></i></a>
-      
+      <a href="{{ url_for('home') }}" class="active">Home</a>
+      <a href="{{ url_for("state") }}">State</a>
+      <a href="{{ url_for('blog') }}">Blog</a>
+      <a href="{{ url_for('translater') }}"><i class="fas fa-language"></i></a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Global Culture Matcher for Travelers</h1>
-      <p>Discover the customs, values, and etiquette of any culture before you land. Our platform helps travelers make meaningful, respectful connections around the world.</p>
-    </div>
-  </section>
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="hero-overlay"></div>
 
- 
-
-<!-- Unified Cultural Events Section -->
-<section class="unified-cultural-section">
-  <h2>🌏 Celebrate India’s Rich Cultural Heritage</h2>
-
-  <div class="unified-event-grid">
-    <!-- Event 1 -->
-    <div class="event-card">
-      <img src="holi.jpg" alt="Holi Festival">
-      <div class="event-info">
-        <h3>Holi – Festival of Colors</h3>
-        <p>Experience vibrant color play, music, and joy during the spring celebration of Holi.</p>
-      </div>
-    </div>
-
-    <!-- Event 2 -->
-    <div class="event-card">
-      <img src="diwali.webp" alt="Diwali Festival">
-      <div class="event-info">
-        <h3>Diwali – Festival of Lights</h3>
-        <p>Celebrate the triumph of light over darkness with diyas, sweets, and fireworks.</p>
-      </div>
-    </div>
-
-    <!-- Event 3 -->
-    <div class="event-card">
-      <img src="fernwehrahee.jpg" alt="Traditional Folk Arts">
-      <div class="event-info">
-        <h3>Fernwehrahee Showcase</h3>
-        <p>Discover handlooms, tribal art, and storytelling through the lens of folk culture lovers.</p>
-      </div>
-    </div>
-
-    <!-- Event 4 -->
-    <div class="event-card">
-      <img src="india.1.cms" alt="Lokrang Festival" />
-      <div class="event-info">
-        <h3>India’s Most Cultural Festivals</h3>
-        <p><strong>Date:</strong> 26–30 January 2025</p>
-        <p><strong>Location:</strong> India</p>
-        <p>India is a melting pot of cultures celebrating vibrant, colorful festivals across the year.</p>
-      </div>
-    </div>
-
-    <!-- Event 5 -->
-    <div class="event-card">
-      <img src="india.2.jpg" alt="Bhopal Utsav Mela" />
-      <div class="event-info">
-        <h3>Bhopal Utsav Mela</h3>
-        <p><strong>Date:</strong> 15 Dec – 15 Jan</p>
-        <p><strong>Location:</strong> Bhopal</p>
-        <p>Month-long fair featuring food, crafts, music, and local performances.</p>
-      </div>
-    </div>
-
-    <!-- Event 6 -->
-    <div class="event-card">
-      <img src="india.4.jpg" alt="Khajuraho Dance Festival" />
-      <div class="event-info">
-        <h3>Khajuraho Dance Festival</h3>
-        <p><strong>Date:</strong> 20–26 Feb 2025</p>
-        <p><strong>Location:</strong> Khajuraho</p>
-        <p>A classical dance showcase amid temple backdrops, highlighting India’s artistry.</p>
-      </div>
-    </div>
+  <div class="hero-text">
+    <h1>Indian Culture Matcher for Explore</h1>
+    <p>Discover the customs, values, and etiquette of any culture before you land. Our platform helps exploring make meaningful, respectful connections around the world.</p>
   </div>
 </section>
 
 
- <section class="state-select-section">
-    <h2>Select a State to Explore</h2>
-    <select id="stateSelect">
-      <option value="" disabled selected>-- Select a State --</option>
-      <option value="mp.html">Madhya Pradesh</option>
-      <option value="Maharahtra.html">Maharashtra</option>
-      <option value="Rajasthan.html">Rajasthan</option>
-      <option value="Kerala.html">Kerala</option>
-      <option value="Punjab.html">Punjab</option>
-      <option value="Assam.html">Assam</option>
-      <option value="Odisha.html">Odisha</option>
-    </select>
+ <!-- Dos and Don'ts Section -->
+
+
+
+  <!-- Cultural Events Section -->
+  <section class="unified-cultural-section">
+    <h2>🌏 Celebrate India’s Rich Cultural Heritage</h2>
+    <div class="unified-event-grid">
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='holi.jpg') }}" alt="Holi Festival">
+        <div class="event-info">
+          <h3>Holi – Festival of Colors</h3>
+          <p>Experience vibrant color play, music, and joy during the spring celebration of Holi.</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='diwali.webp') }}" alt="Diwali Festival">
+        <div class="event-info">
+          <h3>Diwali – Festival of Lights</h3>
+          <p>Celebrate the triumph of light over darkness with diyas, sweets, and fireworks.</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='fernwehrahee.jpg') }}" alt="Traditional Folk Arts">
+        <div class="event-info">
+          <h3>Fernwehrahee Showcase</h3>
+          <p>Discover handlooms, tribal art, and storytelling through the lens of folk culture lovers.</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='india.png') }}" alt="Lokrang Festival">
+        <div class="event-info">
+          <h3>India’s Most Cultural Festivals</h3>
+          <p><strong>Date:</strong> 26–30 January 2025</p>
+          <p><strong>Location:</strong> India</p>
+          <p>India is a melting pot of cultures celebrating vibrant, colorful festivals across the year.</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='india.2.jpg') }}" alt="Bhopal Utsav Mela">
+        <div class="event-info">
+          <h3>Bhopal Utsav Mela</h3>
+          <p><strong>Date:</strong> 15 Dec – 15 Jan</p>
+          <p><strong>Location:</strong> Bhopal</p>
+          <p>Month-long fair featuring food, crafts, music, and local performances.</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="{{ url_for('static', filename='india.4.jpg') }}" alt="Khajuraho Dance Festival">
+        <div class="event-info">
+          <h3>Khajuraho Dance Festival</h3>
+          <p><strong>Date:</strong> 20–26 Feb 2025</p>
+          <p><strong>Location:</strong> Khajuraho</p>
+          <p>A classical dance showcase amid temple backdrops, highlighting India’s artistry.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Dos and Don'ts Section -->
-  <section class="dos-donts-section">
-    <div class="text-content">
-      <h2>Understand local etiquette to make your journey respectful and enriching.</h2>
-      <p>
-India's diverse regions have unique customs and traditions—like removing shoes indoors or dressing modestly at temples. Learning these basics shows respect, avoids offense, and creates more meaningful connections with locals.</p>
-    </div>
+  
+<!-- State Dropdown -->
+<section class="state-select-section">
+  <h2>Select a State to Explore</h2>
+  <select id="stateSelect" onchange="handleStateSelect(this)">
+    <option value="" disabled selected>-- Select a State --</option>
+    <option value="{{ url_for('mp') }}">Madhya Pradesh</option>
+    <option value="{{ url_for('maharashtra') }}">Maharashtra</option>
+    <option value="{{ url_for('rajasthan') }}">Rajasthan</option>
+    <option value="{{ url_for('kerala') }}">Kerala</option>
+    <option value="{{ url_for('punjab') }}">Punjab</option>
+    <option value="{{ url_for('assam') }}">Assam</option>
+    <option value="{{ url_for('odisha') }}">Odisha</option>
+  </select>
+</section>
 
+
+
+    <section class="dos-donts-section">
+
+    <h2>Do's and Don'ts</h2>
+    <p>Respect local customs, traditions, and etiquette to ensure a positive travel experience.</p>
+    
     <div class="cards">
       <div class="card-do-dont do">
         <p>Do this!</p>
-        <a href="do.html">
+        <a href="{{ url_for('do_page') }}">
           <div class="icon check">&#10004;</div>
         </a>
       </div>
 
       <div class="card-do-dont dont">
         <p>Don’t do that</p>
-        <a href="dont.html">
+        <a href="{{ url_for('dont_page') }}">
           <div class="icon cross">&#10006;</div>
         </a>
       </div>
@@ -152,13 +151,89 @@ India's diverse regions have unique customs and traditions—like removing shoes
 
 
 
+<section class="ats-section">
+  <div class="ats-content">
+    <div class="ats-image">
+      <img src="static/diwali.webp" alt="Indian Festival Culture">
+    </div>
+
+    <div class="ats-text">
+      <h2>Traditional Indian Celebrations</h2>
+      <p>
+        Indian festivals are not just rituals — they are vibrant expressions of cultural unity, 
+        joy, and devotion. Each festival brings families and communities together with food, music, and rituals.
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Diwali – Festival of Lights</strong></summary>
+          Diwali celebrates the victory of light over darkness and good over evil. 
+          Homes are decorated with lamps and rangoli, and sweets are shared with loved ones.
+        </details>
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Holi – Festival of Colors</strong></summary>
+          Holi is celebrated with colors, dance, and music to mark the arrival of spring and joy. 
+          People forget grievances and come together to celebrate life.
+        </details>
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Ganesh Chaturthi</strong></summary>
+          This festival celebrates the birth of Lord Ganesha with processions, prayers, and community feasts. 
+          Statues are immersed in water on the last day with devotion and joy.
+        </details>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="ats-section">
+  <div class="ats-content reverse">
+    <div class="ats-text">
+      <h2>Key Indian Cultural Values</h2>
+      <p>
+        Indian cultural values are deeply rooted in traditions, history, and a sense of community. 
+        They shape how people behave, interact, and live their lives.
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Respect for Elders</strong></summary>
+          Elders are treated with high regard and are often the decision-makers in families. 
+          People greet them with a "namaste" or touch their feet as a sign of respect.
+        </details>
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Family-Centric Life</strong></summary>
+          Indian society values joint families or close-knit families. 
+          Family comes first – decisions are often made considering the benefit of all members.
+        </details>
+      </p>
+
+      <p>
+        <details>
+          <summary><strong>Tolerance and Unity in Diversity</strong></summary>
+          India is linguistically, religiously, and culturally diverse. 
+          Yet, the value of peaceful coexistence is deeply cherished.
+        </details>
+      </p>
+    </div>
+
+    <div class="ats-image">
+      <img src="static/Ganesh chaturthi.jpg" alt="Indian Cultural Festival">
+    </div>
+  </div>
+</section>
 
 
 
-
-
-
-
+ 
   <!-- Footer -->
   <footer class="section-p1">
     <div class="col">
@@ -190,28 +265,14 @@ India's diverse regions have unique customs and traditions—like removing shoes
       <h4>Install App</h4>
       <p>From App Store or Google Play</p>
       <div class="row">
-        <img src="a1.jpg" alt="App Store" />
-        <img src="a2.jpg" alt="Google Play" />
+        <img src="{{ url_for('static', filename='a1.jpg') }}" alt="App Store" />
+        <img src="{{ url_for('static', filename='a2.jpg') }}" alt="Google Play" />
       </div>
       <p>Secured Payment Gateway</p>
-      
     </div>
   </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- JavaScript for Select Redirect -->
+  <!-- JavaScript: Redirect on State Select -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const select = document.getElementById('stateSelect');

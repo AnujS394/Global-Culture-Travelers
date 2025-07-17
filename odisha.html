@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Explore Odisha</title>
-  <link rel="stylesheet" href="mp-style.css" />
+   <link rel="stylesheet" href="static/mp-style.css" />
 </head>
+
 <body>
 
   <header class="main-header">
@@ -14,7 +15,7 @@
       <span>Explore Odisha</span>
     </div>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
+      <a href="{{ url_for('home') }}">Home</a>
       <a href="state.html">State</a>
       <a href="blog.html">Blog</a>
     </nav>
@@ -28,35 +29,35 @@
   <section class="cities-grid">
 
     <div class="city-card">
-      <img src="Bhubaneswar.jpg" alt="Bhubaneswar">
+      <img src="static/Bhubaneswar.jpg" alt="Bhubaneswar">
       <h2>Bhubaneswar</h2>
       <p>The Temple City of India, home to Lingaraj Temple, Mukteswara, and timeless architecture of Kalinga dynasty.</p>
       <a href="bhubaneswar.html">Cultural Event</a>
     </div>
 
     <div class="city-card">
-      <img src="puri.jpg" alt="Puri">
+      <img src="static/puri.jpg" alt="Puri">
       <h2>Puri</h2>
       <p>Renowned for the Jagannath Temple and the grand Rath Yatra, Puri is a spiritual and cultural beacon on the Bay of Bengal.</p>
       <a href="puri.html">Cultural Event</a>
     </div>
 
     <div class="city-card">
-      <img src="Konark.jpeg" alt="Konark">
+      <img src="static/Konark.jpeg" alt="Konark">
       <h2>Konark</h2>
       <p>Famous for the Sun Temple (UNESCO site) and Konark Dance Festival showcasing Odissi and classical art forms.</p>
-      <a href="konark.html">Cultural Event</a>
+      <a href="static/konark.html">Cultural Event</a>
     </div>
 
     <div class="city-card">
-      <img src="Rourkela.jpg" alt="Rourkela">
+      <img src="static/Rourkela.jpg" alt="Rourkela">
       <h2>Rourkela</h2>
       <p>An industrial town with tribal heritage, cultural fairs, and growing modern artistic movements.</p>
       <a href="rourkela.html">Cultural Event</a>
     </div>
 
     <div class="city-card">
-      <img src="similipal.jpg" alt="Similipal">
+      <img src="static/similipal.jpg" alt="Similipal">
       <h2>Similipal</h2>
       <p>A biodiverse sanctuary with eco-festivals and tribal rituals—where nature and tradition go hand in hand.</p>
       <a href="similipal.html">Cultural Event</a>

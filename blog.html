@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cultural Blog | Global Culture Traveler</title>
-  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="static/blog.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="blogsheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
 
   <!-- Header -->
@@ -17,7 +19,7 @@
       <span>Global Culture Traveler</span>
     </div>
     <nav class="nav-links">
-      <a href="index.html" >Home</a>
+    <a href="{{ url_for('home') }}">Home</a>
 
       <a href="state.html">state</a>
       <a href="blog.html" class="active">Blog</a>
@@ -29,7 +31,7 @@
   <section id="blog">
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b1.jpg" alt="Japan Festival">
+        <img src="static/b1.jpg" alt="Japan Festival">
       </div>
       <div class="blog-details">
         <h4>Exploring Japan’s Cherry Blossom Festival</h4>
@@ -40,7 +42,7 @@
 
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b2.jpg" alt="Mexico Culture">
+        <img src="static/b2.jpg" alt="Mexico Culture">
       </div>
       <div class="blog-details">
         <h4>5 Cultural Events in Mexico You Can’t Miss</h4>
@@ -51,18 +53,19 @@
 
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b3.jpg" alt="Backpacking Tips">
+        <img src="static/b3.jpg" alt="Backpacking Tips">
       </div>
       <div class="blog-details">
         <h4>Top Packing Tips for Backpackers</h4>
         <p>Pack smart and light for a two-week adventure. Here are expert tips to help you travel with ease and style.</p>
-        <a href="b3.html">Continue Reading →</a>
+      <a href="b3.html">Continue Reading →</a>
+
       </div>
     </div>
 
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b4.jpg" alt="Skater Culture">
+        <img src="static/b4.jpg" alt="Skater Culture">
       </div>
       <div class="blog-details">
         <h4>The Rise of Urban Skater Culture</h4>
@@ -73,7 +76,7 @@
 
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b5.webp" alt="Tribal Arts">
+        <img src="static/b5.webp" alt="Tribal Arts">
       </div>
       <div class="blog-details">
         <h4>Tribal Art Around the World</h4>
@@ -84,7 +87,7 @@
 
     <div class="blog-box">
       <div class="blog-img">
-        <img src="b6.jpg" alt="Modern Travel">
+        <img src="static/b6.jpg" alt="Modern Travel">
       </div>
       <div class="blog-details">
         <h4>Digital Nomads: A New Era of Travel</h4>

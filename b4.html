@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Rise of Urban Skater Culture</title>
-  <link rel="stylesheet" href="b.css" />
+  <link rel="stylesheet" href="static/b.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- Header -->
@@ -17,7 +18,7 @@
     </div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="destinations.html">Destinations</a>
+       <a href="{{ url_for('state') }}">State</a>
       <a href="blog.html" class="active">Blog</a>
     </nav>
   </header>
@@ -26,7 +27,7 @@
   <section class="blog-detail-section">
     <h1>The Rise of Urban Skater Culture</h1>
     <p class="post-date"><strong>Published:</strong> March 10, 2025</p>
-    <img src="b4.jpg" alt="Urban Skater Culture" class="blog-cover" />
+    <img src="static/b4.jpg" alt="Urban Skater Culture" class="blog-cover" />
 
     <p>
       Urban skater culture is more than a sport—it's a global lifestyle. What started on the streets of California has evolved into a worldwide movement that blends rebellion, creativity, and street fashion.

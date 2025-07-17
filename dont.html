@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Don’ts by State – India Travel Etiquette</title>
-  <link rel="stylesheet" href="dont.css" />
+   <link rel="stylesheet" href="static/do.css" />
 </head>
+
 <body>
 
   <header class="main-header">
@@ -20,13 +21,11 @@
       <a href="dont.html" class="active">Don’ts</a>
     </nav>
 
-    <div class="theme-toggle" title="Toggle Theme">
-      <label class="switch">
-        <input type="checkbox" id="theme-switch">
-        <span class="slider round"></span>
-      </label>
-      <span id="theme-label">Light Mode</span>
-    </div>
+   <div class="theme-toggle-wrapper">
+  <div class="socket" id="theme-toggle">
+    <div class="slider-icon" id="slider-icon">🌙</div>
+  </div>
+</div>
   </header>
 
   <section class="content-section">
@@ -115,31 +114,31 @@
   <footer>
     <p>&copy; 2025 Global Culture Traveler. All rights reserved.</p>
   </footer>
+ <script>
+  const toggle = document.getElementById('theme-toggle');
+  const slider = document.getElementById('slider-icon');
+  let darkMode = false;
 
-  <script>
-    const themeToggle = document.getElementById('theme-switch');
-    const themeLabel = document.getElementById('theme-label');
-    const body = document.body;
+  toggle.addEventListener('click', () => {
+    darkMode = !darkMode;
 
-    function updateThemeLabel() {
-      themeLabel.textContent = body.classList.contains('dark-theme') ? 'Dark Mode' : 'Light Mode';
+    if (darkMode) {
+      // Apply dark mode
+      document.body.style.background = "#121212";
+      slider.style.transform = "translate(30px, -50%)";
+      slider.style.background = "#333";
+      slider.style.color = "#fff";
+      slider.textContent = "☀️";
+    } else {
+      // Light mode
+      document.body.style.background = "#e0e0e0";
+      slider.style.transform = "translate(0, -50%)";
+      slider.style.background = "#e0e0e0";
+      slider.style.color = "#000";
+      slider.textContent = "🌙";
     }
-
-    themeToggle.addEventListener('change', () => {
-      body.classList.toggle('dark-theme');
-      localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
-      updateThemeLabel();
-    });
-
-    window.onload = () => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        body.classList.add('dark-theme');
-        themeToggle.checked = true;
-      }
-      updateThemeLabel();
-    };
-  </script>
+  });
+</script>
 
 </body>
 </html>

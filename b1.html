@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Exploring Japan’s Cherry Blossom Festival</title>
-  <link rel="stylesheet" href="b.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='b.css') }}" />
   <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- Header -->
@@ -16,9 +17,9 @@
       <span>Global Culture Traveler</span>
     </div>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="blog.html" class="active">Blog</a>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('state') }}">State</a>
+      <a href="{{ url_for('blog') }}" class="active">Blog</a>
     </nav>
   </header>
 
@@ -26,7 +27,7 @@
   <section class="blog-detail-section">
     <h1>Exploring Japan’s Cherry Blossom Festival</h1>
     <p class="post-date"><strong>Published:</strong> April 15, 2025</p>
-    <img src="b1.jpg" alt="Cherry Blossoms in Japan" class="blog-cover" />
+    <img src="{{ url_for('static', filename='b1.jpg') }}" alt="Cherry Blossoms in Japan" class="blog-cover" />
 
     <p>
       Japan’s cherry blossom season, or <strong>Sakura</strong>, is one of the most iconic times to visit the country. Taking place from late March to early April, this fleeting bloom transforms the landscape into a sea of pink and white petals — a sight that captures the hearts of millions.
@@ -74,7 +75,7 @@
     </p>
 
     <p style="margin-top: 30px;">
-      <a href="blog.html">← Back to Blog</a>
+      <a href="{{ url_for('blog') }}">← Back to Blog</a>
     </p>
   </section>
 
